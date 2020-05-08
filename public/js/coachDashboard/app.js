@@ -195,7 +195,7 @@ angular.module('coachDashBoard', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'sm
             testResponse.block_4 = { name: block_4_name, result: chunksArray[3] / one_fifth }
             testResponse.block_5 = { name: block_5_name, result: chunksArray[4] / one_fifth }
 
-            console.log(testResponse)
+            /*console.log(testResponse)*/
 
         }
 
