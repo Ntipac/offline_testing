@@ -135,7 +135,7 @@ angular.module('passProtect', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ui', 
             }
 
             return response_concat
-        };
+        }
 
         /*turn the list of response objects into a list of strings of concatenated values*/
         function get_responses_concat_list(responses) {
@@ -161,7 +161,7 @@ angular.module('passProtect', ['ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ui', 
             }
             /*return the list of concatenated props for all existing tests*/
             return responses_list
-        };
+        }
 
         function check_response_already_exists(testResponse) {
             /*Same logic as get_responses_concat_list, but applied to the current test being submitted*/

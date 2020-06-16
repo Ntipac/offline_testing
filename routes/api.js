@@ -145,22 +145,22 @@ router.post('/submit_test', [(req, res, next) => {
     will appear as array in response*/
 
     /*for each response recieved*/
-    for (v in response) {
+    for (var attr in response) {
         /*if the reponse is of type object(array). Questions with a single response will be of type string*/
-        if (typeof(response[v]) == "object") {
+        if (typeof(response[attr]) == "object") {
             /*use reducer method to get sum of elements*/
-            total = Object.values(response[v]).reduce(reducer, 0)
+            total = Object.values(response[attr]).reduce(reducer, 0)
             /*if the total is less than 0, make the response 0. Wrong responses have -1 mark, so will be negative total*/
             if (total <= 0) {
-                response[v] = '0'
+                response[attr] = '0'
             } else {
                 /*if the total is not 0, then only the correct responses were selected. Assign value to 1*/
-                response[v] = '1'
+                response[attr] = '1'
             }
         } else {
             /*if only one correct response was selected, value will be partial marks. Partial marks are not allowed. Assign the value to 0*/
-            if (Number(response[v]) < 1) {
-                response[v] = '0'
+            if (Number(response[attr]) < 1) {
+                response[attr] = '0'
             }
         }
     }
@@ -202,11 +202,11 @@ router.post('/overwrite_test', [(req, res, next) => {
 
     /*Get the props which we will use as our criteria for deleting the existing test*/
     /*Before inserting the one which has just been submitted*/
-    let user_id = response['user_id']
-    let test_done = response['test']
-    let course = response['course']
-    let test_module = response['module']
-    let test_date = response['test_date']
+    let user_id = response.user_id
+    let test_done = response.test
+    let course = response.course
+    let test_module = response.module
+    let test_date = response.test_date
 
     /*If the course is a grade_7_revision then delete only the specific test done on the same day,*/
     /*not all tests on the same day in the same course*/
