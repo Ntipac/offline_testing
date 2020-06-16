@@ -1,9 +1,9 @@
+/* jshint esversion: 6 */
+/* jshint asi: true */
+
 const express = require('express')
 const app = express()
 const path = require('path')
-
-/*Port the server will run on*/
-const port = 8888
 
 /*Use bodyParser to parse form data*/
 const bodyParser = require('body-parser');
@@ -33,6 +33,4 @@ app.get('/coach', (req, res) => {
     res.sendFile(__dirname + '/dashboard/index.html')
 })
 
-app.listen(port, '0.0.0.0', () => {
-    console.log('Server running on port ' + port)
-})
+app.listen(process.env.PORT || 5000)
