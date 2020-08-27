@@ -1,47 +1,65 @@
-/*select module dropdown to be same height as other search bar and have enough width*/
-.module_select_dropdown{
-    width: 100%;
-    height: 100%;
+/* Body  */
+
+body{ 
+    text-align:center;
+    /* font-family:"Arial,Helvetica,sans-serif"; */
+    /* margin-bottom: -30%; */
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
 }
 
-/*up-down arrows when user sorts table by column*/
-.st-sort-ascent:before {
-    content: '\25B2';
+/* Navbar background-color */
+
+.navbar_background {
+    /* background-color: #fff; */
+    background-color: rgb(7, 29, 73);
+    /* overflow-y: scroll;
+    overflow-x: hidden;
+     */
 }
 
-.st-sort-descent:before {
-    content: '\25BC';
+.edulution_portal_logo {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  margin-left:-20%;
+  /* margin-top:-1%;
+  margin-bottom:-1%; */
+
 }
 
-#navlogo{
-    background-image:url('../images/coachDashboard/edlogo.png');
-    width:20%;
-    height:100%;
-    background-repeat: no-repeat;
-}
-#navtitle{
-    width: 80%;
-    text-align: center;
+.edulution_portal_logo_img {
+  /* width:320px; */
+    height:300px;
+    margin-top:-20.5%;
+    margin-bottom:-20.5%;
 }
 
-#navtitle > h1{
-    color: white;
+
+#refresh-btn{
+    /* float: left;
+    margin-left: 20%;
+    padding: 3%; */
+    /*background-color: #159B15;*/
+    box-shadow: 2px 2px 2px 2px #3F3F3F;
+    border: #159B15;
 }
 
-.navbar{
-    margin-bottom: 0;
-    border:0;
-    border-radius: 0;
-}
-.nav-tabs{
-    border-bottom: 0
+.refresh_button {
+    margin-left : 90%;
 }
 
-/*Div that contains refresh button*/
-/*text has width of 80%*/
-#navbuttons{
-    width:20%;
+#refresh_button {
+    /* background-color: #159B15; */
+    box-shadow: 2px 2px 2px 2px #3F3F3F;
+    border: #159B15;
+    background-color: rgb(7, 29, 73);
 }
+
+
+
+
+
 
 /*Container div for topnav elements*/
 #topnav_container{
@@ -49,7 +67,7 @@
 }
 
 #topnav,#bottomnav{
-    background: #00A546;
+    background-color: rgb(7, 29, 73);
     padding-top: 0.5%;
 }
 
