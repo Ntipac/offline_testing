@@ -3,6 +3,7 @@
 
 <head>
     <title>Coach Dashboard</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="/js/angular.min.js"></script>
     <script src="/js/angular-filter.min.js"></script>
@@ -42,9 +43,7 @@
       <div class="row">
         <div ng-include="'include/navbar.html'"></div>
     </div>
-            <div id="navtitle">
-                <h1>Coach Dashboard</h1>
-            </div>
+                <h2>Coach Dashboard</h2>
 
         </nav>  
         <nav id="bottomnav" class="navbar navbar-default">
@@ -60,7 +59,7 @@
                 <a href="#" ng-click="menu.selectTab(4)"><h3>Results by Section</h3></a>
               </li>  
               <!-- Hide results by question tab for now -->              
-<!--               <li ng-class="{ active: menu.isSelected(2) }">
+              <li ng-class="{ active: menu.isSelected(2) }">
                 <a href="#" ng-click="menu.selectTab(2)"><h3>Results by Question</h3>
                 </a>
               </li> -->
@@ -72,19 +71,20 @@
           </div>
     </nav>
 
-    <div class="row"> 
-        <div class="refresh_button">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <div class="button_spacing">
-                <a href="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-8 col-md-offset-8 col-sm-offset-8 col-xs-offset-8"> 
+                <div class="refresh_button">
+                    <a href="">
                     <button type="button" class="btn btn-button" id="refresh-btn">
-                        <h3 class="h3_color">Refresh</h3>
+                        <h4 class="btn btn-button h3_color">Refresh</h4>
                     </button>
                 </a>
             </div>
         </div>
     </div>
-  
+  </div>
+
     </script>
     <!-- learners table template -->
     <script type="text/ng-template" id="learners.html">

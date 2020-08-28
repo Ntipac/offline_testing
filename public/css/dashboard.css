@@ -7,12 +7,8 @@ body{
 }
 
 /* Navbar background-color */
-
 .navbar_background {
-    /* background-color: #fff; */
     background-color: rgb(7, 29, 73);
-   
-
 }
 
 .edulution_portal_logo {
@@ -24,16 +20,14 @@ body{
 .edulution_portal_logo_img {
     height:360px;
     margin:-100px;
+    padding-top: 0.5%;
 }
 
 
 /*background for image buttons on landing page*/
-.icon_background {
-        
+.icon_background {     
     width: 352px;
     height:322px; 
-    /* width:250px;
-    height:250px; */
     background: whitesmoke;
     border-radius: 20px;
     box-shadow: 6px 6px 2.5px grey;
@@ -42,28 +36,27 @@ body{
 
 
 #refresh-btn{
-    /* float: left;
-    margin-left: 20%;
-    padding: 3%; */
-    /*background-color: #159B15;*/
-    box-shadow: 2px 2px 2px 2px #3F3F3F;
-    border: #159B15;
-}
-
-.refresh_button {
-    margin-left : 90%;
-}
-
-#refresh_button {
-    /* background-color: #159B15; */
+   
     box-shadow: 2px 2px 2px 2px #3F3F3F;
     border: #159B15;
     background-color: rgb(7, 29, 73);
 }
 
+.refresh_button {
+    margin-left : 150%;
+    padding-top: 0.1%;
+    padding-bottom: 3%;
+}
 
+h2{
+    color: #337ab7;
+    padding-top: 0.5%;
+}
 
-
+h4{
+    color: #fff;
+    font-weight: 500;   
+}
 
 
 /*Container div for topnav elements*/
